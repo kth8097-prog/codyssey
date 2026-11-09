@@ -1,0 +1,117 @@
+Script started on 2026-11-09 11:17:35+09:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="120" LINES="30"]
+[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey/practice[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey/practice[00m$ cd ~
+[?2004l[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ docker 00ver[K[K[K[K[K--version
+[?2004lDocker version 29.9.2, build a82e528
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ docker run hello-world
+[?2004l
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ co[K[Kdocker ru[K[Kpull ubuntu
+[?2004lUsing default tag: latest
+latest: Pulling from library/ubuntu
+
+[1A[2Kf3f25b84a7d7: Pulling fs layer [1B
+[1A[2Kedafa32f5d9e: Pulling fs layer [1B[2A[2Kf3f25b84a7d7: Download complete [2B[1A[2Kedafa32f5d9e: Downloading [=>                                                 ]  1.049MB/42.14MB[1B[1A[2Kedafa32f5d9e: Downloading [==>                                                ]  2.097MB/42.14MB[1B[1A[2Kedafa32f5d9e: Downloading [====>                                              ]  4.194MB/42.14MB[1B[1A[2Kedafa32f5d9e: Downloading [======>                                            ]  5.243MB/42.14MB[1B[1A[2Kedafa32f5d9e: Downloading [========>                                          ]   7.34MB/42.14MB[1B
+[1A[2K21594acc2d8b: Downloading [=============>                                     ]  1.049MB/3.746MB[1B[2A[2Kedafa32f5d9e: Downloading [=========>                                         ]  8.389MB/42.14MB[2B[1A[2K21594acc2d8b: Downloading [=========================================>         ]  3.146MB/3.746MB[1B[2A[2Kedafa32f5d9e: Downloading [===========>                                       ]  9.437MB/42.14MB[2B[1A[2K21594acc2d8b: Download complete [1B[2A[2Kedafa32f5d9e: Downloading [=============>                                     ]  11.53MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [==============>                                    ]  12.58MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [=================>                                 ]  14.68MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [===================>                               ]  16.78MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [=====================>                             ]  17.83MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [=======================>                           ]  19.92MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [==========================>                        ]  22.02MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [===========================>                       ]  23.07MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [=============================>                     ]  25.17MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [===============================>                   ]  26.21MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [=================================>                 ]  28.31MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [====================================>              ]  30.41MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [=====================================>             ]  31.46MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [=======================================>           ]  33.55MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [=========================================>         ]   34.6MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [===========================================>       ]   36.7MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [============================================>      ]  37.75MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [===============================================>   ]  39.85MB/42.14MB[2B[2A[2Kedafa32f5d9e: Downloading [==================================================>]  42.14MB/42.14MB[2B[2A[2Kedafa32f5d9e: Download complete [2B[2A[2Kedafa32f5d9e: Extracting 1 s[2B[2A[2Kedafa32f5d9e: Extracting 1 s[2B[2A[2Kedafa32f5d9e: Extracting 1 s[2B[2A[2Kedafa32f5d9e: Extracting 1 s[2B[2A[2Kedafa32f5d9e: Pull complete [2B[3A[2Kf3f25b84a7d7: Pull complete [3BDigest: sha256:6a06111c3b0a8600feadb270aec771dc239bf407b25625f93f44ab00e11f4d3c
+Status: Downloaded newer image for ubuntu:latest
+docker.io/library/ubuntu:latest
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ docker pull [7mnginx:alpine[27mnginx:alpine
+[?2004lalpine: Pulling from library/nginx
+
+[1A[2Kda90db506dd5: Pulling fs layer [1B
+[1A[2Ke011f124249b: Pulling fs layer [1B
+[1A[2K69d81d552257: Pulling fs layer [1B
+[1A[2K1abafee971b9: Pulling fs layer [1B
+[1A[2K881fc932939e: Pulling fs layer [1B
+[1A[2Ka746bd1dc828: Pulling fs layer [1B
+[1A[2Kc7dfd64eeb02: Pulling fs layer [1B
+[1A[2Kb9c6ee6a30f8: Pulling fs layer [1B[8A[2Kda90db506dd5: Downloading [==>                                                ]  1.049MB/20.55MB[8B[2A[2Kc7dfd64eeb02: Download complete [2B[8A[2Kda90db506dd5: Downloading [=====>                                             ]  2.097MB/20.55MB[8B[8A[2Kda90db506dd5: Downloading [==========>                                        ]  4.194MB/20.55MB[8B[7A[2Ke011f124249b: Download complete [7B[6A[2K69d81d552257: Download complete [6B[8A[2Kda90db506dd5: Downloading [============>                                      ]  5.243MB/20.55MB[8B[8A[2Kda90db506dd5: Downloading [=================>                                 ]   7.34MB/20.55MB[8B[3A[2Ka746bd1dc828: Downloading [==================================================>]     404B/404B[3B[8A[2Kda90db506dd5: Downloading [====================>                              ]  8.389MB/20.55MB[8B[3A[2Ka746bd1dc828: Download complete [3B[5A[2K1abafee971b9: Download complete [5B[8A[2Kda90db506dd5: Downloading [=========================>                         ]  10.49MB/20.55MB[8B[1A[2Kb9c6ee6a30f8: Download complete [1B[8A[2Kda90db506dd5: Downloading [============================>                      ]  11.53MB/20.55MB[8B[4A[2K881fc932939e: Downloading [=============>                                     ]  1.049MB/3.854MB[4B[8A[2Kda90db506dd5: Downloading [=================================>                 ]  13.63MB/20.55MB[8B[4A[2K881fc932939e: Downloading [===========================>                       ]  2.097MB/3.854MB[4B[8A[2Kda90db506dd5: Downloading [===================================>               ]  14.68MB/20.55MB[8B[8A[2Kda90db506dd5: Downloading [========================================>          ]  16.78MB/20.55MB[8B[4A[2K881fc932939e: Download complete [4B[4A[2K881fc932939e: Extracting 1 s[4B[8A[2Kda90db506dd5: Downloading [===========================================>       ]  17.83MB/20.55MB[8B[2A[2Kc7dfd64eeb02: Extracting 1 s[2B[5A[2K1abafee971b9: Pull complete [5B[4A[2K881fc932939e: Pull complete [4B[8A[2Kda90db506dd5: Downloading [================================================>  ]  19.92MB/20.55MB[8B[2A[2Kc7dfd64eeb02: Pull complete [2B[7A[2Ke011f124249b: Pull complete [7B[6A[2K69d81d552257: Pull complete [6B[3A[2Ka746bd1dc828: Pull complete [3B[1A[2Kb9c6ee6a30f8: Pull complete [1B[8A[2Kda90db506dd5: Download complete [8B
+[1A[2K4c900eca9c64: Download complete [1B[9A[2Kda90db506dd5: Extracting 1 s[9B
+[1A[2K8801fee91458: Download complete [1B[10A[2Kda90db506dd5: Extracting 1 s[10B[10A[2Kda90db506dd5: Pull complete [10BDigest: sha256:713fc2ebfd92e8217db451477182ee91944b123d2b1ee9fd5a8c6e91ca6c3a11
+Status: Downloaded newer image for nginx:alpine
+docker.io/library/nginx:alpine
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ [7mdocker images[27mdocker images
+[?2004l                                                                                                    [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m                 [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1mhello-world:latest[0m    [39mc567b231f656[0m       [39m25.9kB[0m         [39m9.49kB[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmy-flask-app:latest[0m   [39m89c17fa563a5[0m        [39m214MB[0m         [39m52.2MB[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mnginx:alpine[0m          [39m713fc2ebfd92[0m       [39m94.5MB[0m         [39m27.3MB[0m        
+[34m[1mubuntu:latest[0m         [39m6a06111c3b0a[0m        [39m163MB[0m         [39m45.9MB[0m        
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ [7mdocker run -it --name my-ubuntu ubuntu bash[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run -it --name my-ubuntu ubuntu bash
+[?2004l[?2004h]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# ls
+[?2004l[0m[01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+[?2004h]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# echo "z [K[H[2J[3J]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# echo      cho   echo
+[?2004l
+[?2004h]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# sdf   ls
+[?2004l[0m[01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+[?2004h]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# echo "d [K[H[2J[3J]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# echo      exit
+[?2004lexit
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ docker ps 0[K-a
+[?2004lCONTAINER ID   IMAGE          COMMAND           CREATED              STATUS                          PORTS                    NAMES
+a2b35cdc34c4   ubuntu         "bash"            About a minute ago   Exited (0) 10 seconds ago                                my-ubuntu
+c709738f98d0   hello-world    "/hello"          About a minute ago   Exited (0) About a minute ago                            quirky_khorana
+af536d41f9f2   my-flask-app   "python app.py"   6 days ago           Exited (255) 24 minutes ago     0.0.0.0:5000->5000/tcp   flask-container
+ab84f51d4dfd   hello-world    "/hello"          7 days ago           Exited (0) 7 days ago                                    elated_robinson
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ docker start my-ubuntu
+[?2004lmy-ubuntu
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED              STATUS         PORTS     NAMES
+a2b35cdc34c4   ubuntu    "bash"    About a minute ago   Up 5 seconds             my-ubuntu
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ docker exec -it my-ubuntu bash
+[?2004l[?2004h]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# echo "exec"         into exec"
+[?2004linto exec
+[?2004h]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# exit
+[?2004lexit
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED         STATUS          PORTS     NAMES
+a2b35cdc34c4   ubuntu    "bash"    2 minutes ago   Up 43 seconds             my-ubuntu
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ docker stats --no-stream
+[?2004lCONTAINER ID   NAME        CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O   PIDS
+a2b35cdc34c4   my-ubuntu   0.00%     3.047MiB / 15.25GiB   0.02%     1.17kB / 126B   0B / 0B     1
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ docker attach my-ubunth[Ku
+[?2004l[K]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# [K]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# exit
+[?2004lexit
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE          COMMAND           CREATED         STATUS                        PORTS                    NAMES
+a2b35cdc34c4   ubuntu         "bash"            2 minutes ago   Exited (0) 10 seconds ago                              my-ubuntu
+c709738f98d0   hello-world    "/hello"          3 minutes ago   Exited (0) 3 minutes ago                               quirky_khorana
+af536d41f9f2   my-flask-app   "python app.py"   6 days ago      Exited (255) 26 minutes ago   0.0.0.0:5000->5000/tcp   flask-container
+ab84f51d4dfd   hello-world    "/hello"          7 days ago      Exited (0) 7 days ago                                  elated_robinson
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ odcker[K[K[K[K[K[Kdocker logs my-ubuntu
+[?2004l[?2004h]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# ls
+[?2004l[0m[01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+[?2004h]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# echo "z [K[H[2J[3J]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# echo      cho   echo
+[?2004l
+[?2004h]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# sdf   ls
+[?2004l[0m[01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+[?2004h]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# echo "d [K[H[2J[3J]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# echo      exit
+[?2004lexit
+[?2004h]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# [K]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# [K]0;root@a2b35cdc34c4: /root@a2b35cdc34c4:/# exit
+[?2004lexit
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2026-11-09 11:21:59+09:00 [COMMAND_EXIT_CODE="0"]

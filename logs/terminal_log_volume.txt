@@ -1,0 +1,42 @@
+Script started on 2026-11-09 12:06:53+09:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="120" LINES="30"]
+[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey[00m$ [7mcd ~[27mcd ~
+[?2004l[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ [7mdocker volume create codyssey-data[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker volume create codyssey-data
+[?2004lcodyssey-data
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ [7mdocker volume ls[27mdocker volume ls
+[?2004lDRIVER    VOLUME NAME
+local     codyssey-data
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ [7mdocker volume inspect codyssey-data[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker volume inspect codyssey-data
+[?2004l[
+    {
+        "CreatedAt": "2026-11-09T03:07:00Z",
+        "Driver": "local",
+        "Labels": null,
+        "Mountpoint": "/var/lib/docker/volumes/codyssey-data/_data",
+        "Name": "codyssey-data",
+        "Options": null,
+        "Scope": "local"
+    }
+]
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ [7mdocker run -d --name vol-a -v codyssey-data:/data ubuntu sleep infinity[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run -d --name vol-a -v codyssey-data:/data ubuntu sleep infinity
+[?2004lecf89ca3822a10c63908b08b0b9906af3dfb850dbaebd50a8c672b386a1f418d
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ [7mdocker exec vol-a sh -c "echo persist test > /data/check.txt"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec vol-a sh -c "echo persist test > /data/check.txt"
+[?2004l[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ [7mdocker exec vol-a cat /data/check.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec vol-a cat /data/check.txt
+[?2004lpersist test
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ [7mdocker rm -f vol-a[27mdocker rm -f vol-a
+[?2004lvol-a
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ [7mdocker ps -a[27mdocker ps -a
+[?2004lCONTAINER ID   IMAGE              COMMAND                  CREATED         STATUS                           PORTS                                     NAMES
+89acc178ecba   nginx:alpine       "/docker-entrypoint.…"   5 minutes ago   Up 5 minutes                     0.0.0.0:8082->80/tcp, [::]:8082->80/tcp   web-bind
+6eb62d6f4d85   codyssey-web:1.0   "/docker-entrypoint.…"   6 minutes ago   Up 6 minutes (healthy)           0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   web-8081
+d271ba054432   codyssey-web:1.0   "/docker-entrypoint.…"   6 minutes ago   Up 6 minutes (healthy)           0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   web-8080
+af536d41f9f2   my-flask-app       "python app.py"          6 days ago      Exited (255) About an hour ago   0.0.0.0:5000->5000/tcp                    flask-container
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ [7mdocker run -d --name vol-b -v codyssey-data:/data ubuntu sleep infinity[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run -d --name vol-b -v codyssey-data:/data ubuntu sleep infinity
+[?2004l5d7d94fa13ae3e473fb52a143da55dc219744c602b91e5486b2e0f0f075d61fb
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ [7mdocker exec vol-b cat /data/check.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec vol-b cat /data/check.txt
+[?2004lpersist test
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ [7mdocker rm -f vol-b[27mdocker rm -f vol-b
+[?2004lvol-b
+[?2004h]0;kth80978191@GNIA-C202-D02: ~[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-11-09 12:07:45+09:00 [COMMAND_EXIT_CODE="0"]

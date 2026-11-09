@@ -1,0 +1,23 @@
+Script started on 2026-11-09 11:11:31+09:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="120" LINES="30"]
+[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey/practice[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey/practice[00m$ [7mcd ~/codyssey/practice[27mcd ~/codyssey/practice
+[?2004l[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey/practice[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey/practice[00m$ [7mls -l note.txt[27mls -l note.txt
+[?2004l-rw-r--r-- 1 kth80978191 kth80978191 23 Nov  9 11:10 note.txt
+[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey/practice[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey/practice[00m$ [7mchmod 600 note.txt[27mchmod 600 note.txt
+[?2004l[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey/practice[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey/practice[00m$ [7mls -l note.txt[27mls -l note.txt
+[?2004l-rw------- 1 kth80978191 kth80978191 23 Nov  9 11:10 note.txt
+[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey/practice[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey/practice[00m$ [7mchmod 644 note.txt[27mchmod 644 note.txt
+[?2004l[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey/practice[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey/practice[00m$ [7mls -l note.txt[27mls -l note.txt
+[?2004l-rw-r--r-- 1 kth80978191 kth80978191 23 Nov  9 11:10 note.txt
+[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey/practice[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey/practice[00m$ [7mmkdir perm_dir[27mmkdir perm_dir
+[?2004l[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey/practice[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey/practice[00m$ [7mls -ld perm_dir[27mls -ld perm_dir
+[?2004ldrwxr-xr-x 2 kth80978191 kth80978191 4096 Nov  9 11:12 [0m[01;34mperm_dir[0m
+[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey/practice[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey/practice[00m$ [7mchmod 700 perm_dir[27mchmod 700 perm_dir
+[?2004l[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey/practice[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey/practice[00m$ [7mls -ld perm_dir[27mls -ld perm_dir
+[?2004ldrwx------ 2 kth80978191 kth80978191 4096 Nov  9 11:12 [0m[01;34mperm_dir[0m
+[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey/practice[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey/practice[00m$ [7mchmod 755 perm_dir[27mchmod 755 perm_dir
+[?2004l[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey/practice[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey/practice[00m$ [7mls -ld perm_dir[27mls -ld perm_dir
+[?2004ldrwxr-xr-x 2 kth80978191 kth80978191 4096 Nov  9 11:12 [0m[01;34mperm_dir[0m
+[?2004h]0;kth80978191@GNIA-C202-D02: ~/codyssey/practice[01;32mkth80978191@GNIA-C202-D02[00m:[01;34m~/codyssey/practice[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-11-09 11:12:58+09:00 [COMMAND_EXIT_CODE="0"]
